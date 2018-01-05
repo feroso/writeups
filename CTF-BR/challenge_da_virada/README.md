@@ -351,14 +351,14 @@ int main(int argc, char *argv[])
 Assim, temos o código python para resolver a flag:
 
 ```python
-f1 = [0x2E, 0x53, 0x60, 0x60, 0x66, 0x31, 0x43, 0x44]
-f2 = [0x58, 0x4B, 0x66, 0x63, 0x6A, 0x33, 0x54, 0x56]
-f3 = [0x7B, 0x51, 0x6D, 0x6C, 0x5D, 0x36, 0x79, 0x44]
-f4 = [0x42, 0x5E, 0x6E, 0x6E, 0x5E, 0x31, 0x2C, 0x00]
+f1 = ".S``f1CD"
+f2 = "XKfcj3TV"
+f3 = "{Qml]6yD"
+f4 = "B^nn^1,\x00"
 
 flag = ''
 for index in reversed(range(8)):
-	flag += chr(f4[index] + 1) + chr(f1[index] - 1) + chr(f2[index] - 2) + chr(f3[index] + 2)
+	flag += chr(ord(f4[index]) + 1) + chr(ord(f1[index]) - 1) + chr(ord(f2[index]) - 2) + chr(ord(f3[index]) + 2)
 
 print flag
 ```
