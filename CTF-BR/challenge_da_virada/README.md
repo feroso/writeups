@@ -214,8 +214,8 @@ Portanto a checagem da flag se inicia na função f1:
             0x104a6      lbu a5, 0(a5)
             0x104aa      addiw a5, a5, -1
             0x104ac      sub a5, a5, a0
-			0x104ae      seqz a5, a5
-			0x104b2      ld ra, 8(sp)
+            0x104ae      seqz a5, a5
+            0x104b2      ld ra, 8(sp)
             0x104b4      ld s0, 0(sp)
             0x104b6      mv a0, a5
             0x104b8      addi sp, sp, 16
