@@ -1,0 +1,7 @@
+tcp.stream eq 152 -> doc
+tcp.stream eq 153 -> wait / get_information
+tcp.stream eq 154 -> get_information / get_process_list
+tcp.stream eq 155 -> get_process_list / exe
+tcp.stream eq 156 -> load_exe 
+tcp.stream eq 157 -> load_exe ok
+tcp.stream eq 158 -> exfiltrated file
