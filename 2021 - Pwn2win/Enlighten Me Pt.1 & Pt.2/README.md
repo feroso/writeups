@@ -19,3 +19,9 @@ The driver also provides 4 IOCTL features:
 So the first step is to write an executable that interacts with the driver and use its own functions to read the flag from guest's kernel space.
 
 Second step requires to bypass WinHvpConnected check made in winhvr!WinHvpHypercall in guest VM in order to call WinHvPostMessage so the Intercept gets installed, turning then the host vulnerable to OOB reads throught  the CPUID intecerpt, then exploit with CPUID instructions to read the flag from host's kernel space.
+
+## References
+Special thanks to @gerhart_x for his amazing research on Hyper-V!
+
+http://hvinternals.blogspot.com/2015/10/hyper-v-internals.html\
+https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-architecture
