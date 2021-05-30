@@ -23,5 +23,5 @@ Second step requires to bypass WinHvpConnected check made in winhvr!WinHvpHyperc
 ## References
 Special thanks to @gerhart_x for his amazing research on Hyper-V!
 
-http://hvinternals.blogspot.com/2015/10/hyper-v-internals.html\
+http://hvinternals.blogspot.com/2015/10/hyper-v-internals.html<br/>
 https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-architecture
